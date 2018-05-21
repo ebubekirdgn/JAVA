@@ -1,0 +1,37 @@
+class Sinif1
+{
+	int x,y;
+	void degerAta(int a,int b)
+	{
+		x=a;
+		y=b;
+	}
+}
+
+class Sinif2 extends Sinif1 // Kalitim yapýldý.
+{
+	public int toplam;
+	int gecici=0;
+	int carp()
+	{
+      
+		for(int i=x;i<=y;i++)
+	  	  {
+	  		  toplam +=i;
+	  	  }
+		return toplam;
+	}
+	
+	 
+}
+
+
+public class Kalitim 
+{
+	public static void main(String args[])
+	{
+		Sinif2 s2 = new Sinif2();
+		s2.degerAta(1, 4);
+		System.out.println(s2.carp());
+	}
+}
